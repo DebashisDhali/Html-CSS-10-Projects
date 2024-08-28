@@ -1,0 +1,464 @@
+:root {
+    --purple500: #281154;
+    --purple300: #270082;
+    --purple600: #1b0058;
+    --red: #dc0000;
+    --body: #f9f6ff;
+}
+
+html {
+    1rem=62.5%;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.nav {
+    height: 70px;
+    background-color: var(--purple300);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: var(--body);
+    position: sticky;
+    top: 0;
+    box-shadow: 5px 5px 5px var(--purple500);
+    z-index: 50;
+
+}
+
+.navtxt {
+    margin-left: 100px;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+
+}
+
+.nav li {
+    margin-right: 25px;
+    font-size: 20px;
+
+    color: var(--body);
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+.main {
+    height: 90vh;
+    background-image: url(images/Frame\ 1.png);
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    gap: 20px;
+
+}
+
+.content {
+    text-align: center;
+    line-height: 4opx;
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--body);
+}
+
+.content h1 {
+    font-size: 8rem;
+    margin-bottom: 40px;
+
+}
+
+.content h3 {
+    font-size: 3rem;
+    font-weight: 550;
+    margin-bottom: 30px;
+}
+
+.content p {
+    line-height: 2.5rem;
+}
+
+.music {
+    height: 500px;
+    background-color: var(--purple600);
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    color: white;
+}
+
+.musicin {
+    height: 400px;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.musicin p {
+    text-align: center;
+    font-size: 17px;
+}
+
+.musicin h2 {
+    margin-bottom: 20px;
+    font-size: 35px;
+    margin-top: -90px;
+
+}
+
+.musicin i {
+    margin-right: .7rem
+}
+
+button {
+    height: 30px;
+    width: 200px;
+    margin: 25px auto;
+    background-color: var(--red);
+    border: none;
+    color: var(--body);
+}
+
+button:hover {
+    background-color: aliceblue;
+    color: black;
+    transition: .2s ease-in-out;
+}
+
+.iphone {
+    height: 650px;
+    width: 70%;
+    /* background-image: url(images/Group\ 2.png);
+    background-size: cover; */
+    background-color: #dc0000;
+    margin: 0 auto;
+    margin-top: -170px;
+    border-radius: 15px;
+}
+
+.ipadcon {
+    display: flex;
+    flex-direction: column;
+    height: 900px;
+    width: 80%;
+    justify-content: center;
+    /* background-color: aqua; */
+    margin: 0 auto;
+}
+
+.txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.txt h2 {
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.txt p {
+    text-align: center;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.txt button {
+    background-color: var(--purple300);
+    width: 150px;
+}
+
+.ipad {
+    height: 590px;
+    width: 85%;
+    /* background-image: url(images/MacBook\ Pro.png);
+    background-size: cover; */
+    background-color: aqua;
+    margin: 20px auto;
+    border-radius: 15px;
+
+}
+
+.video {
+    height: 850px;
+    color: var(--body);
+    /* background-image: url(images/Frame\ 4.png); */
+    width: 100%;
+    background-size: cover;
+    /* display: grid;
+    place-items: center; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.videoin {
+    height: 600px;
+    width: 1000px;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.videoin p {
+    text-align: center;
+    font-size: 17px;
+}
+
+.videoin h2 {
+    margin-bottom: 20px;
+}
+
+.giftcard {
+    height: 650px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px;
+}
+
+.card {
+    height: 350px;
+    width: 45%;
+    /* background-color: blueviolet; */
+    background-image: url(images/pngwing\ 1.png);
+    background-size: cover;
+}
+
+.cardtxt {
+    height: 300px;
+    width: 45%;
+    /* background-color: blueviolet; */
+    color: black;
+}
+
+.cardtxt button {
+    width: 150px;
+    background-color: var(--purple300);
+}
+
+.cardtxt h2 {
+    margin-bottom: 20px;
+}
+
+.cardtxt p {
+    line-height: 20px;
+    font-size: 17px;
+}
+
+.cardtxt h4 {
+    font-size: 17px;
+    font-weight: normal;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.footer {
+    height: 200px;
+    width: 100%;
+    background-color: var(--purple600);
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.ft1,
+.ft2,
+.ft3,
+.ft4 {
+    height: 170px;
+    width: 230px;
+    /* background-color: bisque; */
+    margin-top: 10px;
+    color: var(--body);
+    /* padding: 10px; */
+
+}
+
+.ft1 h2,
+.ft2 h2,
+.ft3 h2,
+.ft4 h2 {
+    margin-bottom: 10px;
+
+}
+
+li {
+    list-style: none;
+    line-height: 20px;
+    font-size: 17px;
+}
+
+hr {
+    width: 60%;
+    margin-bottom: 5px;
+}
+
+.ft3 hr {
+    width: 90%;
+}
+
+.lowerft {
+    height: 65px;
+    background-color: var(--purple500);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    color: var(--body);
+}
+
+.main,
+.music,
+.video,
+.giftcard {
+    scroll-margin: 70px;
+}
+
+#menu-bar {
+    display: none;
+}
+
+@media(max-width:786px) {
+
+    .navtxt {
+        margin-left: 2rem;
+        font-size: 30px;
+        margin-right: -40px;
+    }
+
+    .content {
+        1rem=40%;
+    }
+
+    #menu-bar {
+        display: block;
+        margin-right: 20px;
+        font-size: 2.5rem;
+        color:white;
+    }
+
+    .nav ul {
+        display: none;
+    }
+
+    .iphone {
+
+        width: 100%;
+
+    }
+
+    .ipadcon {
+
+        width: 100%;
+
+    }
+
+    .ipad {
+
+        width: 100%;
+
+    }
+
+    .txt {
+        width: 100%;
+
+    }
+
+    .ipad {
+        width: 100%;
+
+    }
+
+    .iphone {
+        width: 100%;
+        margin-top: -100px;
+    }
+
+    .txt {
+        width: 100%;
+        background-color: aqua;
+        margin-top: 10px;
+    }
+
+    .musicin {
+
+        margin-top: 10px;
+    }
+
+    .musicin p {
+        margin-top: 10px;
+    }
+
+    .musicin h2 {
+        margin-top: 10px;
+
+    }
+
+    .giftcard {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .footer {
+        height: 720px;
+        background-color: var(--purple600);
+        display: flex;
+
+        margin-top: 100px;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .cardtxt {
+        margin-top: 10px;
+        width: 75%;
+        height: 320px;
+    }
+
+    .card {
+        margin-bottom: 20px;
+        height: 350px;
+        width: 75%;
+        height: 350px;
+    }
+    .ft1,
+    .ft2,
+    .ft3,
+    .ft4 {
+        height: 170px;
+        width: 100%;
+        text-align: center;
+    
+    }
+    hr ,.ft3 hr{
+        width: 75%;
+        margin-left: 12.5%;
+        margin-bottom: 5px;
+    }
+
+}
