@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    display: flex;
+    
+}
+.sidemenu{
+    height: 100vh;
+    width: 25%;
+    /* background-color: bisque; */
+    font-size: 25px;
+    /* padding: 10px; */
+    position: fixed;
+    border-right: 1px solid #ccc;
+   
+}
+.sidemenu h2{
+    margin-bottom: 10px;
+}
+.sidemenu li{
+    /* margin: 0px 5px; */
+    border: 1px solid #ccc;
+    font-size: 30px;
+
+}
+.sidemenu a{
+    list-style: none;
+    text-decoration: none;
+    color:black;
+    
+}
+.sidemenu li:hover{
+    border: 1px solid rgba(0, 0, 0, 0.321);
+    transition: .2s ease-in;
+    background-color:#cccccc94;
+}
+.main{
+width: 75%;
+height: 275vh;
+/* background-color: #ccc; */
+padding: 30px 50px;
+margin-left: 25%;
+
+
+}
+.main h2{
+margin-bottom: 2px;
+}
+.main p{
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.main li{
+    margin-bottom: 15px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+.intro h2{
+    font-size: 25px;
+   
+}
+.intro,.what,.java,.hello,.variables{
+    margin-bottom: 50px;
+    scroll-margin: 20px;
+}
+hr{
+    margin-bottom: 20px;
+}
+.code{
+    height: 150px;
+    background-color: #ccc;
+    margin-left: 50px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.what li{
+    margin-left: 40px;
+}
+
+
+@media(max-width:786px){
+    body{
+        display:flex;
+        flex-direction: column;
+    }
+    .sidemenu{
+        position: relative;
+       width:100%;
+       height:40vh;
+       padding: 50px 30px;
+    }
+    .main{
+        width: 100%;
+        
+        margin-left: 0%;
+        
+        
+        }
+}

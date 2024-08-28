@@ -1,0 +1,442 @@
+* {
+    margin: 2px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+
+}
+
+.hero,
+.contents,
+.footer {
+    scroll-margin: 5rem;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nav {
+    height: 60px;
+    background-color: rgb(65, 172, 211);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+    margin-right: 70px;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.nav li {
+    border-bottom: 2px transparent;
+}
+
+.nav li:hover {
+    border-bottom: 2px solid rgb(28, 120, 190);
+}
+
+.nav a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+.nav h1 {
+    margin-left: 90px;
+    font-weight: 900;
+    font-size: 35px;
+    font-family: "Roboto", sans-serif;
+}
+
+.hero {
+    height: 45rem;
+    background-color: #2b3767;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+
+.heroimg {
+    height: 40rem;
+    width: 25rem;
+    /* background-color: blue; */
+    background-image: url(imagess/Surjo.jpg);
+    background-size: cover;
+    border-radius: 15rem;
+    margin-left: 1.5rem;
+
+
+}
+
+.herotxt {
+    height: 35rem;
+    width: 55rem;
+    /* background-color: blue; */
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+}
+
+.herotxt h1 {
+    font-size: 4rem;
+    margin-bottom: -2rem;
+    color: white;
+}
+
+.herotxt h2 {
+    font-size: 5rem;
+    font-weight: bold;
+    overflow: hidden;
+    border-right: 0.5rem solid orange;
+    color: white;
+    white-space: nowrap;
+    margin:0 auto;
+    animation: typing 4.5s steps(37, end), blink-caret 0.75s step-end infinite;
+}
+@keyframes typing{
+    from{
+        width:0;
+    }
+    to{
+        width:100%;
+    }
+}
+@keyframes blink-caret{
+    from,to{
+        border-color:transparent
+    }
+    50%{
+        border-color: orange;
+    }
+}
+#id1 {
+    font-size: 10rem;
+    color: rgba(181, 154, 117, 0.758);
+}
+
+#id2 {
+    font-size: 9rem;
+}
+
+hr {
+    height: .5rem;
+    background-color: rgba(65, 172, 211, 0.633);
+}
+
+.contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #224153b6;
+    width: 99.74%;
+    height: 135rem;
+    /* margin-bottom: -500px; */
+}
+
+.contents h1 {
+    text-align: center;
+    font-size: 8rem;
+    padding-top: 2rem;
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+
+.footer {
+    height: 40rem;
+    background-color: #2b3767;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 6rem;
+    margin-top: 2rem;
+}
+
+.footer h1 {
+    font-size: 8rem;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 2rem;
+    font-family: "Roboto", sans-serif;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: white;
+    gap: 6rem;
+    list-style: none;
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.project1 {
+    height: 36rem;
+    width: 32rem;
+    /* background-color: blue; */
+    background-image: url(imagess/mee.png);
+    background-size: cover;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: .2s ease-in-out;
+}
+
+.project2 {
+    height: 36rem;
+    width: 32rem;
+    /* background-color: blue; */
+    background-image: url(imagess/Frame\ 5.png);
+    background-size: cover;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: .2s ease-in-out;
+}
+
+.project3 {
+    height: 36rem;
+    width: 32rem;
+    /* background-color: blue; */
+    background-image: url(imagess/Frame\ 6.png);
+    background-size: cover;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: .2s ease-in-out;
+}
+
+.project4 {
+    height: 36rem;
+    width: 32rem;
+    /* background-color: blue; */
+    background-image: url(imagess/Frame\ 7.png);
+    background-size: cover;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: .2s ease-in-out;
+}
+
+.project5 {
+    height: 36rem;
+    width: 32rem;
+    /* background-color: blue; */
+    background-image: url(imagess/Frame\ 8.png);
+    background-size: cover;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: .2s ease-in-out;
+}
+
+.project6 {
+    height: 36rem;
+    width: 32rem;
+    /* background-color: blue; */
+    background-image: url(imagess/Frame\ 9.png);
+    background-size: cover;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: .2s ease-in-out;
+}
+
+.project7 {
+    height: 36rem;
+    width: 32rem;
+    /* background-color: blue; */
+    background-image: url(imagess/Frame\ 10.png);
+    background-size: cover;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: .2s ease-in-out;
+}
+
+.project8 {
+    height: 36rem;
+    width: 32rem;
+    /* background-color: blue; */
+    background-image: url(imagess/Frame\ 11.png);
+    background-size: cover;
+    border-radius: 1rem;
+    /* padding: 1.5rem; */
+    overflow: hidden;
+    transition: .2s ease-in-out;
+}
+
+.project9 {
+    height: 36rem;
+    width: 32rem;
+    /* background-color: blue; */
+    background-image: url(imagess/Frame\ 12.png);
+    background-size: cover;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: .2s ease-in-out;
+}
+
+.project1:hover,
+.project2:hover,
+.project3:hover,
+.project4:hover,
+.project5:hover,
+.project6:hover,
+.project7:hover,
+.project8:hover,
+.project9:hover {
+    transform: scale(1.05);
+    transition: .2s ease-in-out;
+    opacity: 0.5;
+}
+
+.container {
+    width: 75%;
+    height: 200%;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    gap: .5rem;
+    /* background-color: bisque; */
+    /* padding-left: 7rem; */
+    margin: 2rem;
+    padding-top: 2rem;
+}
+
+/* .project1 :hover{
+visibility: visible;
+} */
+.project1 h1,
+.project2 h1,
+.project3 h1,
+.project4 h1,
+.project5 h1,
+.project6 h1,
+.project7 h1,
+.project8 h1,
+.project9 h1 {
+    font-size: 30px;
+    background-color: #2b3767;
+    /* visibility: hidden; */
+    /* position: relative; */
+    margin-top: 36rem;
+    /* transform: translateY(36rem); */
+    margin-left: 0px;
+    width: 32rem;
+    height: 10rem;
+}
+
+.project1:hover h1,
+.project2:hover h1,
+.project3:hover h1,
+.project4:hover h1,
+.project5:hover h1,
+.project6:hover h1,
+.project7:hover h1,
+.project8:hover h1,
+.project9:hover h1 {
+
+    /* visibility: visible; */
+    background-color: white;
+    color: black;
+    margin-top: 27rem;
+    /* transform: translateY(27rem); */
+    transition: .6s ease-in-out;
+    opacity: 1;
+}
+
+.finalfooter {
+    height: 6rem;
+    background-color: #252d4b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+}
+
+@media(max-width:900px) {
+    .contents {
+
+        height: 450rem;
+
+    }
+
+    body {
+        height: 400%;
+
+    }
+
+    .container {
+        height: 800%;
+
+    }
+
+
+}
+
+@media(max-width:1000px) {
+    .footer {
+        text-align: center;
+    }
+}
+
+@media(max-width:1290px) {
+    .contents {
+
+        height: 200rem;
+
+    }
+
+    body {
+        height: 200%;
+
+    }
+
+    .container {
+        height: 600%;
+
+    }
+
+}
+
+@media(max-width:862px) {
+    .container {
+        height: 1000%;
+
+    }
+
+    .contents {
+
+        height: 410rem;
+
+    }
+}
